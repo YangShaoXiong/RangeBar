@@ -111,20 +111,20 @@ public class RangeBar extends View {
             RectF rf;
             if (i == 0) {
                 rf = new RectF(getPaddingLeft(),
-                        startY,
+                        getTop(),
                         translationX / 2 + getPaddingLeft(),
-                        endY);
+                        getBottom());
             } else if (i == mRangeNum - 1) {
                 rf = new RectF(width - translationX / 2 + 10,
-                        startY,
+                        getTop(),
                         width + getPaddingRight(),
-                        endY);
+                        getBottom());
 
             } else {
                 rf = new RectF((i - 1) * translationX + translationX / 2 + 10,
-                        startY,
+                        getTop(),
                         i * translationX + translationX / 2 + getPaddingLeft(),
-                        endY);
+                        getBottom());
             }
             mRects.add(rf);
         }
