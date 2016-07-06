@@ -23,8 +23,8 @@
 | range_num         | integer   | RangeBar中Range的数量             | 5 |
 | thumb_color           | color     | RangeBar中thumb的背景颜色         | #33475f |
 | thumb_radius        | dimension   | RangeBar中thumb的半径             | 10 |
-| vertical_line_width | dimension   | RangeBar中Range的宽度 | 5 |
-| vertical_line_height      | dimension   | RangeBar中Range的高度 | 5 |
+| vertical_line_width | dimension   | RangeBar中Range的竖线宽度 | 5 |
+| vertical_line_height      | dimension   | RangeBar中Range的竖线高度 | 5 |
 | horizontal_line_height             | dimension | RangeBar的高度                | 5 |
 ## Thanks for
 * 感谢[大恒](https://github.com/Eternal-Zhai)同学指点实现点击事件
