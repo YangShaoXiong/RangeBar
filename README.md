@@ -27,7 +27,7 @@
 | vertical_line_height      | dimension   | RangeBar中Range的高度 | 5 |
 | horizontal_line_height             | dimension | RangeBar的高度                | 5 |
 ## Thanks for
-* 感谢[大恒]（https://github.com/Eternal-Zhai）同学指点实现点击事件
+* 感谢[大恒](https://github.com/Eternal-Zhai)同学指点实现点击事件
 
 ## License
 ```
