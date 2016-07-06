@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dreamer.rangebar.MainActivity">
+
+    <com.dreamer.library.RangeBar
+        android:id="@+id/rangeBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:range_background="#8a8a8a"
+        app:range_num="5"
+        app:thumb_color="#33475f"
+        app:thumb_radius="10dp"
+        app:vertical_line_height="5dp"
+        app:vertical_line_width="5dp"
+        app:horizontal_line_height="5dp"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rangeBar"
+        android:layout_centerHorizontal="true"
+        android:text="增加Range"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+</RelativeLayout>
