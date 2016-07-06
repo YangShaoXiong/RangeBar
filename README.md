@@ -1,6 +1,7 @@
 ## Preview
 ![效果图](https://github.com/YangShaoXiong/RangeBar/blob/master/screenshot/image.gif)
 ## Usage
+1. 
 ```java
     <com.dreamer.library.RangeBar
         android:id="@+id/rangeBar"
@@ -15,6 +16,16 @@
         app:vertical_line_height="5dp"
         app:vertical_line_width="5dp"
         app:horizontal_line_height="5dp"/>
+```
+2.
+```java
+ RangeBar mRangeBar = (RangeBar) findViewById(R.id.rangeBar);
+        mRangeBar.setOnRangeBarListener(new RangeBar.OnRangeBarListener() {
+            @Override
+            public void onClick(int position) {
+                // do something
+            }
+        });
 ```
 ## Attributes
 | name                        |  format   | description               | default_value |
