@@ -28,8 +28,8 @@ public class RangeBar extends View {
     private int mVerticalLineHeight;
     private int mHorizontalLineHeight;
     private int mThumbRadius;
-    /** 当前选中的位置 */
-    private int mSelectPosition = -1;
+    /** 当前选中的位置,默认为0*/
+    private int mSelectPosition = 0;
 
     private List<RectF> mRects;
 
@@ -49,7 +49,7 @@ public class RangeBar extends View {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.RangeBar);
         int background = ta.getColor(R.styleable.RangeBar_range_background, Color.parseColor("#8a8a8a"));
         int thumbBg = ta.getColor(R.styleable.RangeBar_thumb_color, Color.parseColor("#33475f"));
-
+        mSelectPosition = ta.getInt(R.styleable.RangeBar_range_checked, 0);
         mThumbRadius = ta.getDimensionPixelSize(R.styleable.RangeBar_thumb_radius,
                 (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 10,
                         getResources().getDisplayMetrics()));
@@ -170,6 +170,14 @@ public class RangeBar extends View {
             mRangeNum += num;
             postInvalidate();
         }
+    }
+
+    /**
+     * 获取当前已选中的位置
+     * @return
+     */
+    public int getCurrentPosition() {
+        return mSelectPosition;
     }
 
     public void setOnRangeBarListener(OnRangeBarListener listener) {

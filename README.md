@@ -11,6 +11,7 @@
         android:paddingRight="10dp"
         app:range_background="#8a8a8a"
         app:range_num="5"
+        app:range_checked="1"
         app:thumb_color="#33475f"
         app:thumb_radius="10dp"
         app:vertical_line_height="5dp"
@@ -32,6 +33,7 @@
 | :--------------------------:| :------:  | :-----------:             | :-----------: |
 | range_background            | color     | RangeBar的背景颜色          | #8a8a8a       |
 | range_num         | integer   | RangeBar中Range的数量             | 5 |
+| range_checked     | integer   | 默认选中的Range | 0 |
 | thumb_color           | color     | RangeBar中thumb的背景颜色         | #33475f |
 | thumb_radius        | dimension   | RangeBar中thumb的半径             | 10 |
 | vertical_line_width | dimension   | RangeBar中Range的竖线宽度 | 5 |

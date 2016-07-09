@@ -3,6 +3,7 @@
     <declare-styleable name="RangeBar">
         <attr name="range_background" format="color" />
         <attr name="range_num" format="integer" />
+        <attr name="range_checked" format="integer"/>
         <attr name="thumb_color" format="color"/>
         <attr name="thumb_radius" format="dimension"/>
         <attr name="vertical_line_height" format="dimension"/>
